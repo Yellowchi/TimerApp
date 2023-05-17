@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TimerApp</string>
+    <string name="title_home">时间线</string>
+    <string name="title_dashboard">统计</string>
+    <string name="title_notifications">我的</string>
+    <string name="selecttime">每块表示：</string>
+    <string name="min">分钟</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

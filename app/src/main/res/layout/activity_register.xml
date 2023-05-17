@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke_bg"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="用户注册"
+            android:textStyle="bold"
+            android:textSize="36sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_below="@id/tv_register"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <EditText
+                android:id="@+id/et_register_username"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/edittext_background"
+                android:hint="用户名" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/cardView1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <EditText
+                android:id="@+id/et_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/edittext_background"
+                android:hint="请输入密码" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/cardView2"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <EditText
+                android:id="@+id/et_register_age"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/edittext_background"
+                android:hint="请输入年龄（可选）" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/cardView3"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <EditText
+                android:id="@+id/et_register_sex"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/edittext_background"
+                android:hint="请输入性别（可选）" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/cardView4"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <EditText
+                android:id="@+id/et_register_tel"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/edittext_background"
+                android:hint="请输入手机号" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="72dp"
+        app:fabCustomSize="72dp"
+        app:maxImageSize="32dp"
+        app:backgroundTint="@color/blue_main"
+        app:tint="@color/white"
+        android:src="@drawable/ic_register" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
